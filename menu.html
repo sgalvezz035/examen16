@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Coronel - Menú</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fffaf0;
+    }
+    header {
+      background: linear-gradient(to right, #8B0000, #B22222);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .titulo-principal {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 4rem;
+      animation: pulse 2s infinite;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: gold;
+    }
+    .menu-seccion {
+      padding: 2rem;
+      text-align: center;
+    }
+    .menu-seccion h2 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .menu-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    /* 🔥 ESTO AGREGA LA SEPARACIÓN ENTRE LAS TARJETAS */
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 360px;
+      perspective: 1000px;
+      margin: 10px; /* SEPARACIÓN ENTRE TARJETAS */
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+    .flip-card-front {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .flip-card-front img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .flip-card-front h3 {
+      font-family: 'Bebas Neue', cursive;
+      color: #8B0000;
+      margin: 0.5rem 0;
+    }
+    .flip-card-front p {
+      font-weight: bold;
+      color: #333;
+    }
+    .flip-card-back {
+      background-color: #B22222;
+      color: white;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .flip-card-back h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .flip-card-back ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .flip-card-back ul li {
+      margin: 0.3rem 0;
+    }
+    .footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .footer a {
+      color: #ffcc00;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="titulo-principal" data-aos="fade-down">🍗 El Coronel - Menú</h1>
+    <nav data-aos="fade-up">
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="contacto.html">Haz tu pedido</a>
+    </nav>
+  </header>
+
+  <section class="menu-seccion" data-aos="fade-up">
+    <h2>Combos Estrella</h2>
+    <div class="menu-grid">
+      <!-- Tarjeta 1 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://www.kfc.com.pe/_next/image?url=https%3A%2F%2Fdelosi-pidelo.s3.amazonaws.com%2Fkfc%2Fproducts%2Fmega-peruano-2025-202506191432211298.jpg&w=3840&q=75" alt="Combo Familiar">
+            <h3>Mega peruano</h3>
+            <p>S/ 59.90</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Incluye:</h4>
+            <ul>
+              <li>6 piezas de pollo</li>
+              <li>Papa familiar</li>
+              <li>2 salsas familiares</li>
+              <li>6 nuggets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://www.kfc.com.pe/_next/image?url=https%3A%2F%2Fdelosi-pidelo.s3.amazonaws.com%2Fkfc%2Fproducts%2Fpromo-personal-2-piezas-202506240338492403.jpg&w=3840&q=75" alt="Combo Individual">
+            <h3>Combo Individual</h3>
+            <p>S/ 19.90</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Incluye:</h4>
+            <ul>
+              <li>2 piezas de pollo</li>
+              <li>Papa regular</li>
+              <li>4 nuggets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://scontent.flim26-1.fna.fbcdn.net/v/t39.30808-6/357374650_6484662874920898_6559793351555396887_n.png?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=YanVkZRwI-oQ7kNvwHsYrK7&_nc_oc=AdllFoG-gW3zgOQMWL1kAQS78ynpuIsu1WtqUzoS10RElpVmNtuIxFI4hjQejlYjK9U&_nc_zt=23&_nc_ht=scontent.flim26-1.fna&_nc_gid=9IYd825ztPSvnOo0Nv_-Fg&oh=00_AfQPetZXJfKDqwP2UpO_uWEgzVibNZ91XUzCwuxn7EGPVg&oe=6880CD38" alt="Combo Kids">
+            <h3>Combo Kids</h3>
+            <p>S/ 15.90</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Incluye:</h4>
+            <ul>
+              <li>4 nuggets</li>
+              <li>Mini papas</li>
+              <li>Frugos</li>
+              <li>Galleta</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 4 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://www.kfc.com.pe/_next/image?url=https%3A%2F%2Fdelosi-pidelo.s3.amazonaws.com%2Fkfc%2Fproducts%2Fcombo-twister-xl-peruano-202507050431559226.jpg&w=3840&q=75" alt="Combo Deluxe">
+            <h3>Combo Twister XL Peruano</h3>
+            <p>S/ 32.90</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Incluye:</h4>
+            <ul>
+              <li>1 twister</li>
+              <li>Papa regular</li>
+              <li>Bebida a elección</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 5 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://www.kfc.com.pe/_next/image?url=https%3A%2F%2Fdelosi-pidelo.s3.amazonaws.com%2Fkfc%2Fproducts%2Fkrunchy-duo-202506161431473943.jpg&w=3840&q=75" alt="Combo Mega">
+            <h3>Krunchy Dúo</h3>
+            <p>S/ 25.00</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Incluye:</h4>
+            <ul>
+              <li>2 krunchy</li>
+              <li>1 papa familiar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 6 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://www.kfc.com.pe/_next/image?url=https%3A%2F%2Fdelosi-pidelo.s3.amazonaws.com%2Fkfc%2Fproducts%2Fbig-box-peruano-202506191432173838.jpg&w=3840&q=75" alt="Combo Clásico">
+            <h3>Big Box Peruano</h3>
+            <p>S/ 24.50</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Incluye:</h4>
+            <ul>
+              <li>3 piezas de pollo</li>
+              <li>6 nuggets</li>
+              <li>Papas regular</li>
+              <li>Gaseosa</li>
+              <li>Salsa especial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" data-aos="fade-up">
+    <p>© 2025 El Coronel. Todos los derechos reservados.</p>
+    <a href="#">Términos y condiciones</a>
+    <a href="#">Política de privacidad</a>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

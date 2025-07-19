@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haz tu Pedido - El Coronel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Bebas Neue', sans-serif;
+      background-color: #fff3e0;
+      color: #4e342e;
+    }
+
+    header {
+      background-color: #d84315;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .titulo-principal {
+      font-size: 3rem;
+      color: white;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .pedido-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .pedido-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .pedido-section p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .pedido-form {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 12px;
+      font-size: 1.1rem;
+      border: 2px solid #d84315;
+      border-radius: 8px;
+      background-color: #fff8f0;
+      color: #4e342e;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .form-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .form-buttons button {
+      background-color: #d84315;
+      color: white;
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-buttons button:hover {
+      background-color: #bf360c;
+    }
+
+    .pedido-video {
+      margin: 50px auto;
+      max-width: 800px;
+    }
+
+    .pedido-video iframe {
+      width: 100%;
+      height: 400px;
+      border: 5px solid #d84315;
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: #d84315;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="titulo-principal">🍗 El Coronel - Haz tu Pedido</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="pedido.html">Haz tu pedido</a>
+    </nav>
+  </header>
+
+  <section class="pedido-section">
+    <h2>Ordena desde nuestra web 🍟</h2>
+    <p>Completa este formulario para elegir tus combos favoritos. Rápido, fácil y delicioso.</p>
+
+    <form class="pedido-form">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Número de contacto</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="form-group">
+        <label for="combo">Selecciona tu combo</label>
+        <select id="combo" name="combo" required>
+          <option value="">-- Escoge una opción --</option>
+          <option value="combo1">Combo 1 - Clásico</option>
+          <option value="combo2">Combo 2 - Familiar</option>
+          <option value="combo3">Combo 3 - Mega</option>
+          <option value="combo4">Combo Mini 1</option>
+          <option value="combo5">Combo Mini 2</option>
+          <option value="combo6">Combo Mini 3</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Instrucciones especiales</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ej: sin ají, extra papas..."></textarea>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit">Enviar pedido</button>
+      </div>
+    </form>
+
+    <div class="pedido-video">
+      <h2>¿Cómo pedir?</h2>
+      <p>Mira este video donde te explicamos paso a paso cómo hacer tu pedido 🍗🎥</p>
+      <iframe src="https://www.youtube.com/embed/k1_8vL14LW0?si=kpS_3dtzPH5A4A6u" title="Cómo pedir en El Coronel" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 El Coronel. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

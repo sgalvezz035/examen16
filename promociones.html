@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promociones - El Coronel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff3e0;
+      color: #3e2723;
+    }
+
+    header {
+      background-color: #d32f2f;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .titulo-principal {
+      font-family: 'Alfa Slab One', cursive;
+      color: #fff;
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe082;
+    }
+
+    .promo-texto {
+      text-align: center;
+      margin: 3rem auto 2rem;
+      max-width: 700px;
+      padding: 0 1rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      background-color: #ffccbc;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .promo-video {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .promo-video iframe {
+      border-radius: 15px;
+      width: 90%;
+      max-width: 800px;
+      height: 400px;
+      border: none;
+    }
+
+    .combo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto 4rem;
+      padding: 0 1rem;
+    }
+
+    .combo-card {
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .combo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    .combo-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .combo-card .info {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .combo-card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      color: #d32f2f;
+    }
+
+    .combo-card p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="titulo-principal" data-aos="fade-down">🔥 Menú Krunch</h1>
+    <nav data-aos="fade-up">
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="contacto.html">Haz tu pedido</a>
+    </nav>
+  </header>
+
+  <section class="promo-texto" data-aos="zoom-in">
+    ¡Aprovecha nuestras promociones especiales del día! Combos únicos a precios bajos solo por tiempo limitado. ¡No te los pierdas! 🍟🥤
+  </section>
+
+  <section class="promo-video" data-aos="fade-up">
+    <iframe src="https://www.youtube.com/embed/nIWQIRYUYcI?si=Q8xg6Eaa8d6bSyPo" allowfullscreen></iframe>
+  </section>
+
+  <section class="combo-grid">
+    <div class="combo-card" data-aos="fade-up">
+      <img src="https://scontent.flim26-1.fna.fbcdn.net/v/t39.30808-6/488221939_975187198093623_7886773027397821277_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=BduqNtM2NIAQ7kNvwGrOE2V&_nc_oc=AdnSHsyVbfKsC8NzXax7xG4A8DE4H6oZOIYNPf8SImnrrhvbX9EJ0zKMBsZZE0_yjuU&_nc_zt=23&_nc_ht=scontent.flim26-1.fna&_nc_gid=AzCR0mR7RJO3QOWW2_OKUQ&oh=00_AfR6sVl3GfNujB6_CJbFYL5sbCqN9tL4R5p_mHMWe8UeIw&oe=6880C040" alt="Promo 1">
+      <div class="info">
+        <h3>Menu Krunch</h3>
+        <p>S/ 9.90</p>
+      </div>
+    </div>
+
+    <div class="combo-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="https://scontent.flim26-1.fna.fbcdn.net/v/t39.30808-6/488059447_975187284760281_8152145583518461054_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=igP9q7PGK9QQ7kNvwGxIEul&_nc_oc=Adm_PfNneYOpQeRB-pzdDoVb50p0JT31kE4Qvw_QqJNDxb2GDpnzC8UK0IBITsHZVmM&_nc_zt=23&_nc_ht=scontent.flim26-1.fna&_nc_gid=c5rXDq1eh7oFswaJrUp__w&oh=00_AfQkyGOcaz5_ayK_tSTL1U4_R1Kmub4M5xzDvlzjD14CpA&oe=6880C54E" alt="Promo 2">
+      <div class="info">
+        <h3>Combo Popcorn</h3>
+        <p>S/ 12.90</p>
+      </div>
+    </div>
+
+    <div class="combo-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="https://scontent.flim26-1.fna.fbcdn.net/v/t39.30808-6/488925205_975187378093605_2696831359080347642_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=NZZjV-jdfKwQ7kNvwFvMfKZ&_nc_oc=AdlMKE_t8ANk4USiD1-UUBAVb60NoNtHz1VNOXOdp4MZ6djf4rlk4xYE4ynsDavJ8Eg&_nc_zt=23&_nc_ht=scontent.flim26-1.fna&_nc_gid=TqwW9owKIVoOBf-YjUrT1Q&oh=00_AfTVGafJkR7plGHUDfaF-Xj68jWc3UBe_5yyzckqBEUWuA&oe=6880D2E3" alt="Promo 3">
+      <div class="info">
+        <h3>Krunch Full</h3>
+        <p>S/ 14.90</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 El Coronel. Todos los derechos reservados.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
